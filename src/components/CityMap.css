@@ -1,0 +1,123 @@
+.city-map {
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(135deg, #1a1f2e 0%, #2a3142 100%);
+}
+
+.city-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(42, 49, 66, 0.5);
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.controls-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.control-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #1a1f2e;
+  color: white;
+  border: 1px solid #3a4155;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-select:hover {
+  border-color: #4a5169;
+  background: #232838;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+  justify-items: center;
+  align-items: start;
+}
+
+.grid-container > * {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.empty-city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+  padding: 40px;
+  background: rgba(42, 49, 66, 0.3);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.empty-city h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.empty-city p {
+  color: #8b92a5;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .city-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls-section {
+    flex-direction: column;
+  }
+
+  .control-select {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .city-map {
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .empty-city {
+    padding: 20px;
+  }
+
+  .empty-city h2 {
+    font-size: 1.5em;
+  }
+
+  .empty-city p {
+    font-size: 1em;
+  }
+} 

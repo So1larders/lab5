@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#2c3e50"/>
+  <!-- City skyline -->
+  <g fill="#ecf0f1">
+    <!-- Buildings -->
+    <rect x="50" y="200" width="60" height="312"/>
+    <rect x="130" y="150" width="80" height="362"/>
+    <rect x="230" y="100" width="70" height="412"/>
+    <rect x="320" y="180" width="90" height="332"/>
+    <rect x="430" y="220" width="50" height="292"/>
+    
+    <!-- Windows -->
+    <g fill="#3498db">
+      <rect x="60" y="220" width="40" height="40" rx="5"/>
+      <rect x="60" y="280" width="40" height="40" rx="5"/>
+      <rect x="60" y="340" width="40" height="40" rx="5"/>
+      <rect x="60" y="400" width="40" height="40" rx="5"/>
+      
+      <rect x="140" y="170" width="60" height="40" rx="5"/>
+      <rect x="140" y="230" width="60" height="40" rx="5"/>
+      <rect x="140" y="290" width="60" height="40" rx="5"/>
+      <rect x="140" y="350" width="60" height="40" rx="5"/>
+      <rect x="140" y="410" width="60" height="40" rx="5"/>
+      
+      <rect x="240" y="120" width="50" height="40" rx="5"/>
+      <rect x="240" y="180" width="50" height="40" rx="5"/>
+      <rect x="240" y="240" width="50" height="40" rx="5"/>
+      <rect x="240" y="300" width="50" height="40" rx="5"/>
+      <rect x="240" y="360" width="50" height="40" rx="5"/>
+      <rect x="240" y="420" width="50" height="40" rx="5"/>
+      
+      <rect x="330" y="200" width="70" height="40" rx="5"/>
+      <rect x="330" y="260" width="70" height="40" rx="5"/>
+      <rect x="330" y="320" width="70" height="40" rx="5"/>
+      <rect x="330" y="380" width="70" height="40" rx="5"/>
+      <rect x="330" y="440" width="70" height="40" rx="5"/>
+      
+      <rect x="440" y="240" width="30" height="40" rx="5"/>
+      <rect x="440" y="300" width="30" height="40" rx="5"/>
+      <rect x="440" y="360" width="30" height="40" rx="5"/>
+      <rect x="440" y="420" width="30" height="40" rx="5"/>
+    </g>
+  </g>
+</svg> 

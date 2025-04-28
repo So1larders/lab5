@@ -1,0 +1,128 @@
+.satisfaction-indicator {
+  background: #2a3142;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.satisfaction-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.satisfaction-emoji {
+  font-size: 2em;
+  animation: pulse 2s infinite;
+}
+
+.satisfaction-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.satisfaction-bar-container {
+  background: rgba(43, 49, 66, 0.5);
+  border-radius: 8px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.satisfaction-bar {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  border-radius: 8px;
+}
+
+.satisfaction-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.1) 75%,
+    transparent 75%
+  );
+  background-size: 30px 30px;
+  animation: move 2s linear infinite;
+  border-radius: 8px;
+}
+
+.satisfaction-value {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.satisfaction-details {
+  margin-top: 15px;
+}
+
+.satisfaction-tip {
+  color: #8b92a5;
+  font-size: 0.95em;
+  text-align: center;
+  padding: 10px;
+  background: rgba(43, 49, 66, 0.5);
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.satisfaction-indicator:hover .satisfaction-tip {
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .satisfaction-indicator {
+    padding: 15px;
+  }
+
+  .satisfaction-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .satisfaction-emoji {
+    font-size: 1.8em;
+  }
+} 
