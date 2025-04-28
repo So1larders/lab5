@@ -316,19 +316,19 @@ function AppContent() {
               className={getActiveTab() === 'city' ? 'active' : ''} 
               onClick={() => navigate('/city')}
             >
-              🏙️ Моє місто
+               Моє місто
             </button>
             <button 
               className={getActiveTab() === 'construction' ? 'active' : ''} 
               onClick={() => navigate('/construction')}
             >
-              🏗️ Будівництво
+               Будівництво
             </button>
             <button 
               className={getActiveTab() === 'resources' ? 'active' : ''} 
               onClick={() => navigate('/resources')}
             >
-              💰 Ресурси міста
+               Ресурси міста
             </button>
           </nav>
 
